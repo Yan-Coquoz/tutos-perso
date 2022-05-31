@@ -1,4 +1,4 @@
-# Commandes du terminal de Linux
+# Commandes du terminal de Bash
 
 - **cd**
 
