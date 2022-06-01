@@ -1,7 +1,10 @@
 # Liste de mes tutos
 
+- ![Author](<https://img.shields.io/badge/Author-Yan Coquoz-">)
+- ![GitHub repo size](<https://img.shields.io/github/repo-size/Yan-Coquoz/tuto-perso>)
+
 - [Le clean Code](cleanCode.md)
-- [Quelques commandes sommaire bash](Command_Linux.md) // à compléter
+- [Quelques commandes sommaire Terminal](Command_bash.md) // à compléter
 - [Sass](Config%20SASS.md)
 - [config de Jest et Enzyme](config%20tests%20unitaire.md)
 - [Config de Jest et Enzyme avec React](ConfigTest.md)
