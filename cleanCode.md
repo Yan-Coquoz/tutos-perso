@@ -1,5 +1,6 @@
 # clean-code-javascript
 
+[Ce fichier vient de chez Ryan McDermott](https://github.com/ryanmcdermott/clean-code-javascript)
 ---
 
 ## Sommaire

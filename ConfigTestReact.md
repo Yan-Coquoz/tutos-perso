@@ -1,4 +1,4 @@
-# Configuration de jest et Enzyme
+# Configuration de Jest, Enzyme et React
 
 - [Configuration de Jest avec React](https://jestjs.io/fr/docs/tutorial-react)
 - [Config d'Enzyme](https://enzymejs.github.io/enzyme/docs/installation/)
