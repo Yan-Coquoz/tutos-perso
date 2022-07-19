@@ -159,3 +159,25 @@ Affiche une representation graphique des commits.
 ```bash
 git log --all --decorate --oneline --graph
 ```
+
+Depuis un projet existant en Local, commande Git avec SSH :
+
+```bash
+git remote add origin git@github.com:Id_Github/Non_Du_Projet.git
+git branch -M main
+git push -u origin main
+```
+
+Création d'un repo en ligne de commande :
+
+```bash
+echo "# tr" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:Id_Github/Non_Du_Projet.git
+git push -u origin main
+```
+
+```
