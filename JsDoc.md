@@ -46,7 +46,7 @@ Avant de lancé la commande, il faut créé un fichier jsdoc.json qui va conteni
     "excludePattern": "(node_modules/|docs/|public)"
   },
   "plugins": ["plugins/markdown"],
-  "templetes": {
+  "templates": {
     "cleverLinks": true,
     "monospaceLinks": true
   },
