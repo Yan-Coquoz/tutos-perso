@@ -58,4 +58,18 @@ Avant de lancé la commande, il faut créé un fichier jsdoc.json qui va conteni
 }
 ````
 
+### Petit plus
+
+Extension VSCode :
+
+- [VS DocBlocker](https://marketplace.visualstudio.com/items?itemName=jeremyljackson.vs-docblock)
+
+Config complémentaire:
+
+- Aller dans les paramètres de VSCode `ctrl + ,` dans la barre de recherche, tapé le mot `check` et s'assuré que les options sont bien cochées,
+
+  - TypeScript › Check: Npm Is Installed
+
+  - JS/TS › Implicit Project Config: Check JS
+
 [voir plus de config](https://www.youtube.com/watch?v=h1nCs3tGpMM)

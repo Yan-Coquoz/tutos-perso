@@ -14,6 +14,12 @@ git config --global color.ui true
 git config -l 
 ```
 
+Permet de push sur une nouvelle branche sans message d'erreur.
+
+```bash
+git config --global push.autoSetupRemote true
+```
+
 Initialisation d'un projet
 
 ```bash
