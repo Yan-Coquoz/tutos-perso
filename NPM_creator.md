@@ -55,6 +55,12 @@ export {Modale,Input};
 
 ### Configuration
 
+Installation d'un package qui aidera à la création du dossier dist destiné au build de l'app.
+
+```bash
+npm i create-component-lib
+```
+
 - Avant de publier votre package, placer votre nom d'utilisateur ou pseudo devant la propriété name du package.json pour s'assurer d'avoir un module avec un nom unique. Déplacé les scripts de
 `dependencies` dans `devDependencies`, et copier dans `peerDependencies` les scripts de React et react dom.
 De plus, modifier le script build.
