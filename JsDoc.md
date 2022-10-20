@@ -3,7 +3,7 @@
 - [npm jsdoc](https://www.npmjs.com/package/jsdoc)
 - [configuration de la JsDoc](https://jsdoc.app/about-configuring-jsdoc.html)
 
-Si ce n'est déjà fait, il faut initalisé le projet.
+Si ce n'est déjà fait, il faut initialisé le projet.
 
 ````bash
 npm init

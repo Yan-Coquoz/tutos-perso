@@ -101,7 +101,7 @@ saveCityZipCode(
 const address = "One Infinite Loop, Cupertino 95014";
 const cityZipCodeRegex = /^[^,\\]+[,\\\s]+(.+?)\s*(\d{5})?$/;
 const [_, city, zipCode] = address.match(cityZipCodeRegex) || [];
-saveCityZipCode(city, zipCode);
+console.log(city, zipCode);
 ```
 
 **[⬆ Haut de page](#sommaire)**

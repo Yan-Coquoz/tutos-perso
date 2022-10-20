@@ -4,13 +4,13 @@ Configurer git :
 
 ```bash
 git config --global user.name "Bozo Le Clown"
-git config --global user.email "bozo.leclown@oclock.io"
+git config --global user.email "bozo.leclown@monemail.com"
 git config --global core.editor code
 git config --global color.ui true
 ```
 
 ```bash
-// voir si tout c'est bien passé
+# voir si tout c'est bien passé
 git config -l 
 ```
 
@@ -177,13 +177,11 @@ git push -u origin main
 Création d'un repo en ligne de commande :
 
 ```bash
-echo "# tr" >> README.md
+
 git init
 git add README.md
 git commit -m "first commit"
 git branch -M main
 git remote add origin git@github.com:Id_Github/Non_Du_Projet.git
 git push -u origin main
-```
-
 ```
