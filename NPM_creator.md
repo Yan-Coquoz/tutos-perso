@@ -5,6 +5,9 @@
 
 - `node.js` > v16
 - `Git`
+- Un terminal bash ex : **`git Bash`**
+
+Si vous utilisez `cmd` ou bien `powershell` vous risquez d'avoir des commandes non reconnus ainsi des mauvaises mise à niveau du composant.
 
 - Création de votre projet React
 
@@ -138,7 +141,7 @@ git push
 # indique le nouveau numéro de version (incrémente automatiquement le semver)
 npm version patch 
 # run est optionnel dans ce cas
-npm publish --access-public
+npm publish --access public
 ```
 
 ## Installation sur un projet
