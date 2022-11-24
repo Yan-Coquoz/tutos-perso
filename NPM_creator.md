@@ -183,7 +183,7 @@ Une fois le fichier créer, ajouter dans la partie extends "@babel/preset-react"
 ```json
 // .eslintrc
 {
-  "extends": ["react-app", "@babel/preset-react"],
+  "extends": ["react-app", "preset-react"],
   "rules": {
     "react-hooks/exhaustive-deps": "off"
   }
