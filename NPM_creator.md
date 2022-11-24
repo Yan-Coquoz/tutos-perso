@@ -156,3 +156,32 @@ npm install nom_du_projet
 // React
 import { MonCompo } from "nom_du_projet"
 ```
+
+
+## Extra
+
+Il se peut qu'il y est in problème avec Babel en debut de chaque fichier. En signalant un type d'erreur comme ça : `Parsing error: [BABEL]`
+
+Installer le module suivant :
+
+```bash
+npm install --save-dev @babel/preset-react
+```
+
+puis configurer eslint. rappel : 
+
+```bash
+npm init @eslint/config 
+```
+Une fois le fichier créer, ajouter dans la partie extends "@babel/preset-react" : 
+
+```json
+.eslintrc
+{
+  "extends": ["react-app", "@babel/preset-react"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+  }
+}
+```
+
