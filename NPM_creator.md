@@ -70,6 +70,8 @@ npm i create-component-lib
 De plus, modifier le script build.
 
 ```json
+// package.json
+{
 // Nom du projet
 "name": "@john_doe/nom_du_projet",
 "description": "Ce que fait le super projet en cours"
@@ -90,6 +92,7 @@ De plus, modifier le script build.
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
+}
 ```
 
 - Installer [le babel cli](https://babeljs.io/docs/usage/cli/)
@@ -97,6 +100,7 @@ De plus, modifier le script build.
 Puis à la racine du projet, créer un fichier `.babelrc` avec les instructions ci-dessous.
 
 ```json
+// .babelrc
 {  
     "presets":
      [["react-app", { "absoluteRuntime": false }]]
@@ -135,6 +139,7 @@ npm publish --access public
 - En cas de correction du package ou du code, si on utilise git, faire un commit puis mettre a jour son numero de version avec la commande ci-dessous :
 
 ```bash
+npm run build
 git add .
 git commit -m "Mise à jour de mon package"
 git push
@@ -176,7 +181,7 @@ npm init @eslint/config
 Une fois le fichier créer, ajouter dans la partie extends "@babel/preset-react" : 
 
 ```json
-.eslintrc
+// .eslintrc
 {
   "extends": ["react-app", "@babel/preset-react"],
   "rules": {
