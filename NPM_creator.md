@@ -95,17 +95,8 @@ De plus, modifier le script build.
 }
 ```
 
-- Installer [le babel cli](https://babeljs.io/docs/usage/cli/)
 
-Puis à la racine du projet, créer un fichier `.babelrc` avec les instructions ci-dessous.
 
-```json
-// .babelrc
-{  
-    "presets":
-     [["react-app", { "absoluteRuntime": false }]]
-}
-```
 
 On s'assure d'avoir un nom unique pour son module :
 
@@ -167,26 +158,19 @@ import { MonCompo } from "nom_du_projet"
 
 Il se peut qu'il y est in problème avec Babel en debut de chaque fichier. En signalant un type d'erreur comme ça : `Parsing error: [BABEL]`
 
+- Installer [le babel cli](https://babeljs.io/docs/usage/cli/)
+
 Installer le module suivant :
 
 ```bash
-npm install --save-dev @babel/preset-react
+npm install babel-preset-react-app @babel/core @babel/cli --save-dev
 ```
-
-puis configurer eslint. rappel : 
-
-```bash
-npm init @eslint/config 
-```
-Une fois le fichier créer, ajouter dans la partie extends "@babel/preset-react" : 
+puis un fichier `.babelrc` à la racine du projet.
 
 ```json
-// .eslintrc
+// .babelrc
 {
-  "extends": ["react-app", "preset-react"],
-  "rules": {
-    "react-hooks/exhaustive-deps": "off"
-  }
+   "presets": [["react-app", { "absoluteRuntime": false }]]
 }
 ```
 
