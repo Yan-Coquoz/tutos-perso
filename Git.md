@@ -45,7 +45,7 @@ Se connecter au repo distant.
 git remote add upstream adressDuRepository
 ```
 
-Etat du du dépot git sur notre hote
+Etat du du dépot git sur notre hôte
 
 ```bash
 git status
