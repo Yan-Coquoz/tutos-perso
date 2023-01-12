@@ -95,7 +95,36 @@ De plus, modifier le script build.
   }
 }
 ```
+## Configuration d'Eslint
 
+A la racine du projet crée un fichier `.eslintrc.json`. Vous pouvez aussi ajouté des règles et modifier les règles présentes. 
+
+```json
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"]
+  }
+}
+```
 
 On s'assure d'avoir un nom unique pour son module :
 
@@ -152,37 +181,6 @@ npm install nom_du_projet
 import { MonCompo } from "nom_du_projet"
 ```
 
-## Configuration d'Eslint
-
-A la racine du projet crée un fichier `.eslintrc.json`. Vous pouvez aussi ajouté des règles et modifier les règles présentes. 
-
-```json
-{
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended"
-  ],
-  "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": "latest",
-    "sourceType": "module"
-  },
-  "plugins": ["react"],
-  "rules": {
-    "react-hooks/exhaustive-deps": "off",
-    "quotes": ["error", "double"],
-    "semi": ["error", "always"]
-  }
-}
-```
-
 ## Extra
 
 Il se peut qu'il y est in problème avec Babel en debut de chaque fichier. En signalant un type d'erreur comme ça : `Parsing error: [BABEL]`
@@ -203,3 +201,8 @@ puis un fichier `.babelrc` à la racine du projet.
 }
 ```
 
+En cas de commande disant que NODE_ENV est non reconnu :
+
+```bash
+npm install -g win-node-env
+```
