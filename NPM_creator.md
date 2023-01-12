@@ -72,10 +72,17 @@ De plus, modifier le script build.
 // point d'entrée du nom_du_projet
 "main":"dist/index.js",
 "files":["dist", "README.md"], 
-"module":"dist/index.js"
+"module":"dist/index.js",
+"repository": {
+    "type": "git",
+    "url": "https://github.com/Yan-Coquoz/Mes_modules"
+  },
 // Les fichiers a publier
 "scripts": {
+    "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",  
+    "clean": "rm -fr dist coverage",
+    "clean:fix": "rm -fr node_modules coverage build dist docs package-lock.json",
 }
 "devDependencies": {
     "react": "^18.2.0",
