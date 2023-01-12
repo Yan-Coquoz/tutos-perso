@@ -152,6 +152,36 @@ npm install nom_du_projet
 import { MonCompo } from "nom_du_projet"
 ```
 
+## Configuration d'Eslint
+
+A la racine du projet crée un fichier `.eslintrc.json`. Vous pouvez aussi ajouté des règles et modifier les règles présentes. 
+
+```json
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off",
+    "quotes": ["error", "double"],
+    "semi": ["error", "always"]
+  }
+}
+```
 
 ## Extra
 
