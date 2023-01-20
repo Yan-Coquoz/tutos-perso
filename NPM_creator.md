@@ -81,8 +81,8 @@ De plus, modifier le script build.
 "scripts": {
     "start": "react-scripts start",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",  
-    "clean": "rm -fr dist coverage",
-    "clean:fix": "rm -fr node_modules coverage build dist docs package-lock.json",
+    "clean": "rm -rf dist coverage",
+    "clean:fix": "rm -rf node_modules coverage build dist docs package-lock.json",
 }
 "devDependencies": {
     "react": "^18.2.0",
