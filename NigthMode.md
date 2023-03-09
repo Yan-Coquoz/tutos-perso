@@ -1,5 +1,7 @@
 # Création du dark mode.
 
+Pour la facilité la lecture du fichier avec VSCode : `ctrl+k` puis `v`.
+
 Une petite astuce pour créé le dark mode à partir d'un lien des favoris du navigateur.
 
 La manipulation est faite sous chrome pour ma part, mais rien n’empêche de le faire avec un autre navigateur.
