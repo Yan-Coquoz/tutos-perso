@@ -5,8 +5,8 @@
 
  Aller dans `fichier` , `préférences` puis  `Configurer les extraits utilisateur`.
 
- une fenêtre apparait, selectionner `javascript.json` (babel)
-
+ - une fenêtre apparait, selectionner `javascript.json` (babel) (pour React)
+ - pour vue, selectionner `Nouveau fichier d'extraits globaux...`, puis nommé le fichier comme vous le souhaitez.
  On arrive sur une page qui presente se texte :
 
  ```json
@@ -56,7 +56,7 @@
 10. Tous ce qui sera présent dans `${bidule}` sera changeable dès l'import
 ]
 
-mes exemples :
+mes exemples React :
 
 ```json
 }
@@ -138,3 +138,35 @@ mes exemples :
   ]
  }
 ```
+
+mes exemples Vue2 :
+```json
+{
+  "vue2Template": {
+    "prefix": "vue2Template",
+    "description": "Création des différentes balises de Vue.js",
+    "body": [
+      "<template>",
+      "\n\t<div></div>",
+      "</template>",
+      "\n<style scoped>",
+      "</style>",
+      "\n<script>",
+      "import { defineComponent } from \"@vue/composition-api\";",
+      "\nexport default defineComponent({",
+      "name: \"\",",
+      "components: {},",
+      "\nprops:{},",
+      "\nsetup(){},",
+      "\ndata(){},",
+      "\ncomputed:{},",
+      "\nwatch:{},",
+      "\nmethods:{}",
+      "});",
+      "</script>"
+    ],
+    "scope": "vue"
+  }
+}
+```
+
