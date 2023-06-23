@@ -3,11 +3,11 @@
  Dans `VScode`
  appel d'un snippet pour que lors de sont appel il est toujours la même structure.
 
- Aller dans `fichier` , `préférences` puis  `extraits utilisateur`.
+ Aller dans `fichier` , `préférences` puis  `Configurer les extraits utilisateur`.
 
  une fenêtre apparait, selectionner `javascript.json` (babel)
 
- On tombe sur une page avec ça :
+ On arrive sur une page qui presente se texte :
 
  ```json
  {
@@ -23,7 +23,7 @@
   //   "$2"
   //  ],
   //  "description": "Log output to console"
-  
+  }
   }
   ```
 
