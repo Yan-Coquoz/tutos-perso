@@ -23,13 +23,14 @@
   //   "$2"
   //  ],
   //  "description": "Log output to console"
-  // 
+  
   }
   ```
 
   copier le code de `Print to console` à la fin de la phrase de description, mettre la copie avant le `}` .
 
 ```json
+}
  "Print to console": {
     "prefix": "log",
     "body": [
@@ -40,6 +41,7 @@
        "export default ${machin}",
     ],
    "description": "Log output to console"
+ }
 ```
 
 1. "description du nouveau snippet ":{
@@ -57,6 +59,7 @@
 mes exemples :
 
 ```json
+}
  "Créer un composant stateless": {
   "prefix": "imprsl",
   "body": [
