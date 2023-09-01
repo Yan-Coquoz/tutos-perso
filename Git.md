@@ -108,6 +108,12 @@ Changer de branche tout en créant une nouvelle branche
 git checkout -b nouvelleBranche
 ```
 
+Modifier le nom d'un branche (être sur cette branche)
+
+```bash
+git branch -m nouveauNom
+```
+
 Supprimer une branche. Se positionner sur une autre branche avant la suppression.
 
 ```bash
